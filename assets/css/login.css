@@ -1,0 +1,55 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    height: 100%;
+    background-repeat: no-repeat;
+    background: #2980b9;
+    background: -webkit-linear-gradient(to right, #2c3e50, #2980b9);  
+    background: linear-gradient(to right, #2c3e50, #2980b9);
+}
+
+section.text-center.mt-5 {
+    z-index: 1010;
+    position: relative;
+}
+
+.card {
+    max-width: 380px;
+    padding: 40px 40px;
+}
+
+.btn {
+    font-weight: 700;
+    height: 36px;
+}
+
+.form-signin input{
+    font-size: 16px;
+}
+
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+    background-color: #A335B5!important;
+}
+
+.custom-checkbox .custom-control-input:checked:focus ~ .custom-control-label::before {
+    box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(164, 57, 183, 0.25)
+}
+.custom-checkbox .custom-control-input:focus ~ .custom-control-label::before {
+    box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(0, 0, 0, 0.25)
+}
+.custom-checkbox .custom-control-input:active ~ .custom-control-label::before {
+    background-color: #A336B6; 
+}
+
+.inner-icon .fas {
+    position: absolute;
+    padding: 1.6em 0;
+}
+
+.left-icon input {
+    padding-left: 1.3em;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #A337B6;
+}

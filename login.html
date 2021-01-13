@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Academia | Sala Belleza</title>
+    <link rel="stylesheet" href="./assets/vendor/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/vendor/font/font.min.css">
+    <link rel="stylesheet" href="./assets/css/login.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <section class="text-center mt-5">
+        <!--<img class="rounded-circle shadow" width="120px" height="120px" src="//ssl.gstatic.com/accounts/ui/avatar_2x.png"> -->            
+            <img class="rounded-circle shadow" width="140px" height="140px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjtvwlwzOSBslFOz2dk2sLygF7ws45e10HGg&usqp=CAU">
+        </section>
+        <section class="card mx-auto mb-5 mt-n5 pb-4">
+            <form class="form-signin pt-5">
+                <article class="form-group mb-3">
+                    <div class="inner-icon left-icon has-danger">
+                        <i class="fas fa-at"></i>
+                        <input type="email" class="form-control is-invalid" placeholder="Email" required autofocus>
+                        <small class="invalid-feedback">Campo requerido.</small>
+                    </div>
+                </article>
+
+                <article class="form-group mb-5">
+                    <div class="inner-icon left-icon has-success">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" class="form-control is-valid" placeholder="Contraseña" required>
+                        <small class="valid-feedback">Campo correcto.</small>
+                    </div>
+                </article>
+
+                <article class="custom-control custom-checkbox my-3 pt-2">
+                    <input type="checkbox" class="custom-control-input" id="remember">
+                    <label class="custom-control-label" for="remember">Recordar contraseña</label>
+                </article>
+
+                <button class="btn btn-lg btn-block btn-info mb-3">Aceptar</button>
+            </form>
+            <a href="#" >Recuperar contraseña</a>
+        </section>
+
+
+        <section class="justify-content-center d-flex">
+            <span class=" alert alert-danger" role="alert">
+                <i class="fas fa-times"></i> Email o contaseña incorrecta
+            </span>
+        </section>
+        <section class="justify-content-center d-flex">
+            <span class=" alert alert-warning" role="alert">
+                <i class="fas fa-exclamation-triangle"></i> Ha ocurrido un error
+            </span>
+        </section>
+        <section class="justify-content-center d-flex">
+            <span class=" alert alert-primary" role="alert">
+                <i class="fas fa-info-circle"></i> Confirme su email
+            </span>
+        </section>
+    </div>
+    
+
+    <script src="./assets/vendor/js/jquery-3.5.1.slim.min.js"></script>
+    <script src="./assets/vendor/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/vendor/js/fontawesomw.js"></script>
+</body>
+
+</html>
