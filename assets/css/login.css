@@ -17,7 +17,7 @@ section.text-center.mt-5 {
     padding: 40px 40px;
 }
 
-.btn {
+button.btn.btn-lg.btn-block.btn-info.mb-3 {
     font-weight: 700;
     height: 36px;
 }
@@ -52,4 +52,8 @@ section.text-center.mt-5 {
 a:hover {
     text-decoration: none;
     color: #A337B6;
+}
+
+span.close {
+    cursor: pointer;
 }

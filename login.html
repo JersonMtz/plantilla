@@ -16,8 +16,9 @@
 
     <div class="container">
         <section class="text-center mt-5">
-        <!--<img class="rounded-circle shadow" width="120px" height="120px" src="//ssl.gstatic.com/accounts/ui/avatar_2x.png"> -->            
-            <img class="rounded-circle shadow" width="140px" height="140px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjtvwlwzOSBslFOz2dk2sLygF7ws45e10HGg&usqp=CAU">
+            <!--<img class="rounded-circle shadow" width="120px" height="120px" src="//ssl.gstatic.com/accounts/ui/avatar_2x.png"> -->
+            <img class="rounded-circle shadow" width="140px" height="140px"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjtvwlwzOSBslFOz2dk2sLygF7ws45e10HGg&usqp=CAU">
         </section>
         <section class="card mx-auto mb-5 mt-n5 pb-4">
             <form class="form-signin pt-5">
@@ -44,10 +45,10 @@
 
                 <button class="btn btn-lg btn-block btn-info mb-3">Aceptar</button>
             </form>
-            <a href="#" >Recuperar contraseña</a>
+            <a href="#" data-toggle="modal" data-target="#forgot">Recuperar contraseña</a>
         </section>
 
-
+        <!-- NOTIFICACIONES FEEDBAK -->
         <section class="justify-content-center d-flex">
             <span class=" alert alert-danger" role="alert">
                 <i class="fas fa-times"></i> Email o contaseña incorrecta
@@ -63,8 +64,35 @@
                 <i class="fas fa-info-circle"></i> Confirme su email
             </span>
         </section>
+        <!-- NOTIFICACIONES FEEDBAK -->
     </div>
-    
+
+    <section class="modal fade" id="forgot" tabindex="-1" aria-labelledby="forgot" aria-hidden="true" data-backdrop="static">
+        <article class="modal-dialog">
+            <section class="modal-content">
+                <article class="modal-header">
+                    <h5 class="modal-title" id="forgotLabel">Recuperar Contraseña</h5>
+                    <span class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </span>
+                </article>
+                <article class="modal-body">
+                    <div class="form-control">
+                        <input type="email" class="form-control" placeholder="¿Olvidó su contraseña?" required>
+                        <!-- <small class="text-muted">Digite su email regitrado en el sistema.</small> <br> -->
+                        <!-- <small class="text-success">Se envió un enlace de recuperación de contraseña a su correo asociado. Revise su bandeja de entrada y siga los pasos.</small><br> -->
+                        <small class="text-danger">El correo brindado no esta asociado al sistema. Por favor intente con otro.</small>
+                    </div>
+                    <br><br><br><br>
+                </article>
+                <article class="modal-footer">
+                    <button type="button" class="btn btn-dark btn-sm" data-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-warning btn-sm">Recuperar</button>
+                </article>
+            </section>
+        </article>
+    </section>
+
 
     <script src="./assets/vendor/js/jquery-3.5.1.slim.min.js"></script>
     <script src="./assets/vendor/js/bootstrap.bundle.min.js"></script>
