@@ -9,16 +9,60 @@
     <title>Academia | Sala Belleza</title>
     <link rel="stylesheet" href="./assets/vendor/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/vendor/font/font.min.css">
-    <link rel="stylesheet" href="./assets/css/login.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            height: 100%;
+            background-repeat: no-repeat;
+            background: #2980b9;
+            background: -webkit-linear-gradient(to right, #2c3e50, #2980b9);  
+            background: linear-gradient(to right, #2c3e50, #2980b9);
+        }
+
+        section.text-center.mt-5 {
+            z-index: 1010;
+            position: relative;
+        }
+
+        .card {
+            max-width: 380px;
+            padding: 40px 40px;
+        }
+
+        button.btn.btn-lg.btn-block.btn-info.mb-3 {
+            font-weight: 700;
+            height: 36px;
+        }
+
+        .form-signin input{
+            font-size: 16px;
+        }
+
+        .inner-icon .fas {
+            position: absolute;
+            padding: 1.6em 0;
+        }
+
+        .left-icon input {
+            padding-left: 1.3em;
+        }
+
+        a:hover {
+            text-decoration: none;
+            color: #A337B6;
+        }
+
+        span.close {
+            cursor: pointer;
+        }
+    </style>
 </head>
 
 <body>
-
     <div class="container">
         <section class="text-center mt-5">
-            <!--<img class="rounded-circle shadow" width="120px" height="120px" src="//ssl.gstatic.com/accounts/ui/avatar_2x.png"> -->
             <img class="rounded-circle shadow" width="140px" height="140px"
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjtvwlwzOSBslFOz2dk2sLygF7ws45e10HGg&usqp=CAU">
+                src="./assets/img/login.png">
         </section>
         <section class="card mx-auto mb-5 mt-n5 pb-4">
             <form class="form-signin pt-5">
@@ -36,11 +80,6 @@
                         <input type="password" class="form-control is-valid" placeholder="Contraseña" required>
                         <small class="valid-feedback">Campo correcto.</small>
                     </div>
-                </article>
-
-                <article class="custom-control custom-checkbox my-3 pt-2">
-                    <input type="checkbox" class="custom-control-input" id="remember">
-                    <label class="custom-control-label" for="remember">Recordar contraseña</label>
                 </article>
 
                 <button class="btn btn-lg btn-block btn-info mb-3">Aceptar</button>
